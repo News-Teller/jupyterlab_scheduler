@@ -94,10 +94,10 @@ class Component extends React.Component {
           updatedCommand = `bash ${this.props.script_path}`;
           break;
         case "python":
-          updatedCommand = `python ${this.props.script_path}`;
+          updatedCommand = `/opt/tljh/user/bin/python ${this.props.script_path}`;
           break;
         case "papermill":
-          updatedCommand = `papermill ${this.props.script_path} /dev/null`;
+          updatedCommand = `/opt/tljh/user/bin/papermill ${this.props.script_path} /dev/null`;
           break;
         case "custom":
           updatedCommand = `[CUSTOM_RUN_ENVIRONMENT_GOES_HERE] ${this.props.script_path}`;
