@@ -1,6 +1,6 @@
 # jupyterlab_scheduler
 
-A simple plugin for scheduling files for recurring execution using the cron utility within the Jupyter Lab UI. Use cases
+A simple plugin for scheduling files for recurring execution using the cron utility within the Jupyter Lab UI.
 
 Security Note: Cron jobs are executed under the permission set of the JupyerLab process; if you start jupyter as root (not recommended!) every job that is scheduled via the UI will also run as root.
 
@@ -8,24 +8,24 @@ Security Note: Cron jobs are executed under the permission set of the JupyerLab 
 
 ### Scheduling a job
 
-![Context Menu](https://raw.githubusercontent.com/tiburon-security/jupyterlab_scheduler/master/screenshots/context-menu.png)
+![Context Menu](https://raw.githubusercontent.com/News-Teller/jupyterlab_scheduler/master/screenshots/context-menu.png)
 
-![Schedule Job](https://raw.githubusercontent.com/tiburon-security/jupyterlab_scheduler/master/screenshots/schedule-job.png)
+![Schedule Job](https://raw.githubusercontent.com/News-Teller/jupyterlab_scheduler/master/screenshots/schedule-job.png)
 
 ### Viewing Scheduled Jobs
 
-![Menu](https://raw.githubusercontent.com/tiburon-security/jupyterlab_scheduler/master/screenshots/main-menu.png)
+![Menu](https://raw.githubusercontent.com/News-Teller/jupyterlab_scheduler/master/screenshots/main-menu.png)
 
-![Scheduled Jobs](https://raw.githubusercontent.com/tiburon-security/jupyterlab_scheduler/master/screenshots/scheduled-jobs.png)
+![Scheduled Jobs](https://raw.githubusercontent.com/News-Teller/jupyterlab_scheduler/master/screenshots/scheduled-jobs.png)
 
 ### Viewing Run Logs
 
-![View Logs](https://raw.githubusercontent.com/tiburon-security/jupyterlab_scheduler/master/screenshots/view-logs.png)
+![View Logs](https://raw.githubusercontent.com/News-Teller/jupyterlab_scheduler/master/screenshots/view-logs.png)
 
 ## Prerequisites
 
-* JupyterLab
-* Cron installed on the JupyterLab host
+- JupyterLab
+- Cron installed on the JupyterLab host
 
 ## Installation
 
@@ -46,6 +46,8 @@ For a development install (requires npm version 4 or later), do the following in
 # Move to jupyterlab_scheduler directory
 # Install dependencies
 npm install
+# Build
+npm run build:all
 # Install your development version of the extension
 jupyter labextension install .
 ```
@@ -82,3 +84,7 @@ python3 -m twine upload --repository pypi dist/*
 jupyter labextension uninstall jupyterlab_scheduler
 ```
 
+## License
+
+Licensed under the BSD 2-Clause License.  
+Original work by [Jovanni Hernandez](https://github.com/tiburon-security/jupyterlab_scheduler) is also licensed under [BSD 2-Clause License](https://pypi.org/project/jupyterlab-scheduler/).

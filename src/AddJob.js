@@ -1,3 +1,12 @@
+/**
+ * Copyright © 2021-present NewsTeller,
+ *             2020 Jovanni Hernandez.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD 2-Clause license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 import { ReactWidget } from '@jupyterlab/apputils';
 import { requestAPI } from './api';
 import cronParser from 'cron-parser';
